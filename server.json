@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.MukundaKatta/prompt-injection-shield",
-  "description": "Scan untrusted text for prompt-injection signals before it reaches your LLM. Returns a risk score, ranked findings, and an option to strip dangerous lines.",
+  "description": "Scan untrusted text for prompt-injection signals before it reaches your LLM.",
   "version": "0.1.0",
   "repository": {
     "url": "https://github.com/MukundaKatta/prompt-injection-shield-mcp",
