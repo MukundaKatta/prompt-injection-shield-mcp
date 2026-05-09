@@ -1,0 +1,60 @@
+{
+  "name": "@mukundakatta/prompt-injection-shield-mcp",
+  "version": "0.1.0",
+  "mcpName": "io.github.MukundaKatta/prompt-injection-shield",
+  "description": "MCP server exposing prompt-injection-shield: scan untrusted text for prompt-injection signals, score risk, strip dangerous lines. Built for Claude Desktop, Cursor, Cline, Windsurf, and Zed.",
+  "type": "module",
+  "bin": {
+    "mcp-prompt-injection-shield": "dist/server.js"
+  },
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx src/server.ts",
+    "test": "node --test --import tsx test/*.test.ts",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "cursor",
+    "cline",
+    "windsurf",
+    "zed",
+    "prompt-injection",
+    "security",
+    "guardrails",
+    "llm",
+    "agent-safety"
+  ],
+  "author": "Mukunda Katta <mukunda.vjcs6@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/MukundaKatta/prompt-injection-shield-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/MukundaKatta/prompt-injection-shield-mcp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MukundaKatta/prompt-injection-shield-mcp.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@mukundakatta/prompt-injection-shield": "^0.1.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}
